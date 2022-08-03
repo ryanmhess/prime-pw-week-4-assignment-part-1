@@ -38,7 +38,7 @@ console.log(' ');
 //    return firstNumber + secondNumber;
 
 function addNumbers( num1, num2) {
-  console.log( `When we add ${num1} and ${num2} we get:`)
+  console.log( `When we add ${num1} and ${num2} we get:` );
   let result = num1 + num2;
   return result;
 } // end addNumbers
@@ -49,9 +49,14 @@ console.log(' ');
 ///////////////////////////////////////////////////////////////////////////
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
+function multiplyThree( num1, num2, num3){
+  console.log( `${num1} multiplied by ${num2} multiplied by ${num3} equals:` );
+  let result = num1 * num2 * num3;
+  return result; 
+} //  end multiplyThree
 
-}
+console.log( multiplyThree( 4, 5, 6 ) );
+console.log(' ');
 
 ///////////////////////////////////////////////////////////////////////////
 
