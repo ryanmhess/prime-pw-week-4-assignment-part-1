@@ -4,52 +4,49 @@ console.log('***** Function Practice *****')
 // After _each_ function, use a console log to call the function
 // to test it and display the result
 
+///////////////////////////////////////////////////////////////////////////
+
 // 1. Function to return 'Hello World!'
+//    Call the function to test
+
 function hello() {
   return 'Hello World!';
-}
-// Call the function to test
+} //  end hello
+
 console.log('Test - should say "Hello World!"', hello());
 console.log(' ');
 
+///////////////////////////////////////////////////////////////////////////
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-
-// let people = ['matt', 'theo', 'hess', 'chameng'];
-
-// for (let person of people){
-//     console.log(greet(person));
-// }
-
-// function greet(name){
-//     return `Hello, ${name}. You are delightful`
-// }   //  end greet
+//    Remember to call the function to test
 
 let person = prompt( 'What is your name?');
 
-function helloName(name) {
+function helloName( name ) {
   console.log('in helloName');
-  return `Hello, ${name}!`;
-}
+  return `Hello, ${ name }!`;
+} //  end helloName
 
-console.log( helloName(person) );
+console.log( helloName( person ) );
 console.log(' ');
 
-// Remember to call the function to test
-
+///////////////////////////////////////////////////////////////////////////
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber ) {
   // return firstNumber + secondNumber;
 }
 
+///////////////////////////////////////////////////////////////////////////
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( ){
 
 }
 
+///////////////////////////////////////////////////////////////////////////
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
@@ -65,6 +62,7 @@ console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
 
+///////////////////////////////////////////////////////////////////////////
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
@@ -72,12 +70,16 @@ function getLast( array ) {
 
 }
 
+///////////////////////////////////////////////////////////////////////////
+
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
   
 }
+
+///////////////////////////////////////////////////////////////////////////
 
 // ----------------------
 // Stretch Goals
@@ -90,6 +92,8 @@ function isFirstLetter(letter, string) {
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
+///////////////////////////////////////////////////////////////////////////
+
 // 9. Function to return the sum of all numbers in an array
 function sumAll( ) {
   let sum = 0
@@ -97,11 +101,13 @@ function sumAll( ) {
   return sum;
 }
 
+///////////////////////////////////////////////////////////////////////////
+
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-
+///////////////////////////////////////////////////////////////////////////
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
