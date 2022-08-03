@@ -25,7 +25,7 @@ console.log(' ');
 let person = prompt( 'What is your name?');
 
 function helloName( name ) {
-  console.log('in helloName');
+  console.log('When meeting someone new, an appropriate greeting is:');
   return `Hello, ${ name }!`;
 } //  end helloName
 
@@ -35,9 +35,16 @@ console.log(' ');
 ///////////////////////////////////////////////////////////////////////////
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
-  // return firstNumber + secondNumber;
-}
+//    return firstNumber + secondNumber;
+
+function addNumbers( num1, num2) {
+  console.log( `When we add ${num1} and ${num2} we get:`)
+  let result = num1 + num2;
+  return result;
+} // end addNumbers
+
+console.log( addNumbers( 7, 11 ) );
+console.log(' ');
 
 ///////////////////////////////////////////////////////////////////////////
 
