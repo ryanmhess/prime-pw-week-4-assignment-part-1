@@ -10,13 +10,32 @@ function hello() {
 }
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
+console.log(' ');
 
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName( name ) {
-  return;
+
+// let people = ['matt', 'theo', 'hess', 'chameng'];
+
+// for (let person of people){
+//     console.log(greet(person));
+// }
+
+// function greet(name){
+//     return `Hello, ${name}. You are delightful`
+// }   //  end greet
+
+let person = prompt( 'What is your name?');
+
+function helloName(name) {
+  console.log('in helloName');
+  return `Hello, ${name}!`;
 }
+
+console.log( helloName(person) );
+console.log(' ');
+
 // Remember to call the function to test
 
 
