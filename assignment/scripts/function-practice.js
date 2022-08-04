@@ -87,15 +87,17 @@ console.log(' ');
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 
-let basket = [];
+let basket = ['apple', 'banana', 'carrot', 'grape', 'pickle'];
+
 
 function getLast( array ) {
-  if ( basket[]){
-    return 
-  }
+  console.log( 'The list item I put in my basket was:');
+  let lastItemIndex = array.length - 1;
+  return lastItem = array[lastItemIndex];
 }
 
-
+console.log( getLast( basket ) );
+console.log(' ');
 
 ///////////////////////////////////////////////////////////////////////////
 
