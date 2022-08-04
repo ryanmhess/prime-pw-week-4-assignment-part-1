@@ -49,6 +49,7 @@ console.log(' ');
 ///////////////////////////////////////////////////////////////////////////
 
 // 4. Function to multiply three numbers & return the result
+
 function multiplyThree( num1, num2, num3){
   console.log( `${num1} multiplied by ${num2} multiplied by ${num3} equals:` );
   let result = num1 * num2 * num3;
@@ -62,25 +63,39 @@ console.log(' ');
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
+//    Call the function to test each outcome (true & false) 
+//    Write a separate console.log statement for each outcome
+
+let num1 = 3;
+let num2 = 0;
+let num3 = -3;
+
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
-}
-// Call the function to test each outcome (true & false) 
-// Write a separate console.log statement for each outcome
-console.log( 'isPositive - should say true', isPositive(3) );
-console.log( 'isPositive - should say false', isPositive(0) );
-console.log( 'isPositive - should say false', isPositive(-3) );
+    return false;
+} //  end isPositive
+
+console.log( `Is the number ${num1} greater than 0? Answer:`, isPositive( num1 ) );
+console.log( `Is the number ${num2} greater than 0? Answer:`, isPositive( num2 ) );
+console.log( `Is the number ${num3} greater than 0? Answer:`, isPositive( num3 ) );
+console.log(' ');
 
 ///////////////////////////////////////////////////////////////////////////
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
 
+let basket = [];
+
+function getLast( array ) {
+  if ( basket[]){
+    return 
+  }
 }
+
+
 
 ///////////////////////////////////////////////////////////////////////////
 
