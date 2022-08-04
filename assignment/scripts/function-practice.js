@@ -149,9 +149,9 @@ function sumAll(numberArray) {
   // TODO: loop to add items
   for(let i=0; i<numberArray.length; i++){
     sum = sum + numberArray[i];
-  }
+  } //  end for loop
   return sum;
-}
+} //  end function
 
 console.log('The sum of the number array', numCount, 'is:', sumAll(numCount));
 console.log(' ');
@@ -161,6 +161,22 @@ console.log(' ');
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+
+let inputArray = [ 7, 36, -4, 15, 12, -8, -47, -12, 88];
+let outputArray = [];
+
+function positiveArray(inputNums){
+  for(let i=0; i<inputNums.length; i++){
+    if(inputNums[i]>=0){
+      outputArray.push(inputNums[i]);
+    } //  end if
+  } //  end for loop
+  return outputArray;
+} //  end function
+
+console.log('The input array includes:', inputArray);
+console.log('After removing the negative numbers, the output array includes:', positiveArray(inputArray));
+console.log(' ');
 
 ///////////////////////////////////////////////////////////////////////////
 
