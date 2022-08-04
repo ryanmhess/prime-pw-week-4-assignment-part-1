@@ -136,15 +136,25 @@ function isFirstLetter(letter, string) {
 
 console.log( 'Is `a` the first letter of the word apple?', isFirstLetter('a', 'apple') );
 console.log( 'Is `z` the first letter of the word apple?', isFirstLetter('z', 'apple') );
+console.log(' ');
 
 ///////////////////////////////////////////////////////////////////////////
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
+
+let numCount = [1, 3, 5, 7, 9, 11, 13];
+
+function sumAll(numberArray) {
   let sum = 0
   // TODO: loop to add items
+  for(let i=0; i<numberArray.length; i++){
+    sum = sum + numberArray[i];
+  }
   return sum;
 }
+
+console.log('The sum of the number array', numCount, 'is:', sumAll(numCount));
+console.log(' ');
 
 ///////////////////////////////////////////////////////////////////////////
 
