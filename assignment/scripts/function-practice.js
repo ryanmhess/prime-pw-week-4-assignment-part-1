@@ -73,7 +73,7 @@ let num3 = -3;
 function isPositive( number ) {
   if ( number > 0 ){
     return true;
-  }
+  } //  end if
     return false;
 } //  end isPositive
 
@@ -87,14 +87,13 @@ console.log(' ');
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 
-let basket = ['apple', 'banana', 'carrot', 'grape', 'pickle'];
-
+let basket = [ 'apple', 'banana', 'carrot', 'grape', 'pickle' ];
 
 function getLast( array ) {
-  console.log( 'The list item I put in my basket was:');
+  console.log( 'The last item I put in my basket was:');
   let lastItemIndex = array.length - 1;
   return lastItem = array[lastItemIndex];
-}
+} //  end getLast
 
 console.log( getLast( basket ) );
 console.log(' ');
@@ -104,9 +103,21 @@ console.log(' ');
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
+let classList = [ 'Blake', 'Chameng', 'Dan', 'Hess', 'Kyle', 'Maggie', 'Sam F', 'Sam O', 'Sarah', 'Theo', 'Yanira '];
+let classMate = prompt( 'L`Engle Cohort Search \n\n     -Please enter name to search:')
+
 function find( value, array ){
-  
-}
+  for( let i=0; i<array.length; i++ ){
+    if( value === array[i] ){
+      return true;
+    } //  end if
+  } //  end loop
+  return false;
+} //  end find
+
+console.log( `Is ${classMate} a member of the L'Engle cohort?`, find( classMate, classList ) );
+console.log(' ');
 
 ///////////////////////////////////////////////////////////////////////////
 
