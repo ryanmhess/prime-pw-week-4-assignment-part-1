@@ -126,11 +126,16 @@ console.log(' ');
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
-function isFirstLetter(letter, string) {
 
-}
-console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
-console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+function isFirstLetter(letter, string) {
+  if(letter === string[0]){ //  each letter in a string has its own index, just like an array
+    return true;
+  } //  end if
+  return false;
+} // end  function
+
+console.log( 'Is `a` the first letter of the word apple?', isFirstLetter('a', 'apple') );
+console.log( 'Is `z` the first letter of the word apple?', isFirstLetter('z', 'apple') );
 
 ///////////////////////////////////////////////////////////////////////////
 
