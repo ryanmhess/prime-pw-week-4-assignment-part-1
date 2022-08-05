@@ -183,3 +183,17 @@ console.log(' ');
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+//
+//  Create a function that takes an integer as an argument 
+//  and returns "Even" for even numbers or "Odd" for odd numbers.
+
+let num = prompt('Enter a number to evaluate:');
+
+function even_or_odd(number) {
+  if(number % 2 === 0){
+    return 'Even';
+  } //  end if
+  return 'Odd';
+} //  end function
+
+console.log(`The input number of [${num}] is:`, even_or_odd(num));
