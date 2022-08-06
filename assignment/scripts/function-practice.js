@@ -197,3 +197,22 @@ function even_or_odd(number) {
 } //  end function
 
 console.log(`The input number of [${num}] is:`, even_or_odd(num));
+console.log(' ');
+
+//  Added another codewars problem because I remembered we did the previous one
+//  during office hours this week and that would be cheap ;) haha
+//
+//  Complete the solution so that it reverses the string passed into it.
+//  ex.   'world' => 'dlrow'
+
+let forwardVar = 'congratulations';
+let backwardVar = '';
+
+function solution(str){
+  for(let i=str.length-1; i>=0; i--){
+    backwardVar += str[i];
+  } //  end for loop
+  return backwardVar;
+} //  end function
+
+console.log(`The word [${forwardVar}] spelled backwards is:`, solution(forwardVar));
