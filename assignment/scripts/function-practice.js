@@ -200,7 +200,7 @@ console.log(`The input number of [${num}] is:`, even_or_odd(num));
 console.log(' ');
 
 //  Added another codewars problem because I remembered we did the previous one
-//  during office hours this week and that would be cheap ;) haha
+//  during office hours this week and that would be cheese ;) haha
 //
 //  Complete the solution so that it reverses the string passed into it.
 //  ex.   'world' => 'dlrow'
